@@ -4,15 +4,18 @@ import java.util.Scanner;
 
 public class Ex9 {
     public static void main(String[] args){
+
+        //create an arraylist object
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println("Enter integers to list : ");
-        input(list);
+        input(list); //input integers method
         System.out.println(list);
-        sort(list);
+        sort(list); //sorting integers method
         System.out.println(list);
 
     }
 
+    //input integers method
     public static void input(ArrayList<Integer> list){
         Scanner intPut = new Scanner(System.in);
         for(int i = 0 ; i < 5; i++){
@@ -20,6 +23,7 @@ public class Ex9 {
         }
     }
 
+    //method sorting element in arraylist using insertion sort
     public static void sort(ArrayList<Integer> list){
         for(int i = 0 ; i < list.size(); i++){
             int j = i - 1;
